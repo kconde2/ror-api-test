@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-before_action :set_post, only: [:show, :update, :destroy]
+before_action :set_post, only: [:show, :update, :destroy, :get_comments]
     # GET /posts
     def index
         @posts = Post.all
@@ -38,6 +38,11 @@ before_action :set_post, only: [:show, :update, :destroy]
     def destroy
 
         @post.destroy
+    end
+
+    # GET /posts/:id/comments
+    def get_comments
+        render json: @post.comments
     end
 
     private
