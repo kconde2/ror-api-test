@@ -1,24 +1,5 @@
-# README
+1. Clone project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+2. Run `rails db:migrate` to migrate database sqlite by default
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+3. Run `rails server` into project root
